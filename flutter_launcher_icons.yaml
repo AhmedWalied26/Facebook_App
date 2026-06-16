@@ -1,0 +1,5 @@
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/images/facebook_app_logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/facebook_app_logo.png"
