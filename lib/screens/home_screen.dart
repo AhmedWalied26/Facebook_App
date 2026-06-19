@@ -68,6 +68,7 @@ class HomeScreen extends StatelessWidget {
                           color: Color(0xff898F9C),
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Inter_18pt-Bold',
                         ),
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,

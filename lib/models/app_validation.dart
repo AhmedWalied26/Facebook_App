@@ -1,7 +1,7 @@
 class AppValidation {
   static String? validatePassword(String? value) {
     if (value == null || value.isEmpty) {
-      return 'PassWord Required';
+      return 'Password Required';
     }
     final hasUppercase = RegExp(r'[A-Z]');
     final hasLowercase = RegExp(r'[a-z]');
@@ -25,7 +25,7 @@ class AppValidation {
 
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Email is Required';
+      return 'Email Required';
     }
     if (!value.contains('@')) {
       return 'Invalid Email';
