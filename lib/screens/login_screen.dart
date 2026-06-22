@@ -3,16 +3,15 @@ import 'package:facebook_app/models/input_decoration.dart';
 import 'package:facebook_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class LoginScreen extends StatefulWidget {
-  bool isObseured = true;
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool isObseured = true;
   final _formkey = GlobalKey<FormState>();
 
   final TextEditingController emailController = TextEditingController();
@@ -46,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextFormField(
-                  obscureText: widget.isObseured,
+                  obscureText: isObseured,
                   validator: AppValidation.validatePassword,
                   controller: passwordController,
                   keyboardType: TextInputType.visiblePassword,
@@ -56,13 +55,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       padding: EdgeInsets.only(right: 17),
                       color: Color(0xff898F9C),
                       onPressed: () {
-                        widget.isObseured = !widget.isObseured;
+                        isObseured = !isObseured;
                         setState(() {});
                       },
                       icon: Icon(
-                        widget.isObseured
-                            ? Icons.visibility_off
-                            : Icons.visibility,
+                        isObseured ? Icons.visibility_off : Icons.visibility,
                       ),
                     ),
                   ),
