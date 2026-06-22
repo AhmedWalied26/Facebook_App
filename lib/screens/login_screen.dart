@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               SizedBox(height: 140),
               Image.asset('assets/images/facebook_rounded_logo.png'),
-              SizedBox(height: 62),
+              const SizedBox(height: 62),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextFormField(
@@ -42,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextFormField(
@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       );
                     }
                   },
-                  child: Text(
+                  child: const Text(
                     'Login',
                     style: TextStyle(
                       color: Colors.white,
@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               TextButton(
                 onPressed: () {},
                 child: Text(
@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 224),
+              const SizedBox(height: 224),
               SizedBox(
                 height: 50,
                 child: ElevatedButton(
@@ -128,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Create Account',
                     style: TextStyle(
                       color: Color(0xff1877F2),
@@ -138,7 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Image.asset('assets/images/meta_logo.png'),
             ],
           ),

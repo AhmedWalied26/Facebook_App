@@ -55,11 +55,11 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 11, top: 18, right: 15),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 21,
                     backgroundImage: AssetImage('assets/images/Messi.jpg'),
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Expanded(
                     child: TextFormField(
                       decoration: InputDecoration(
@@ -79,14 +79,14 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
-            Divider(thickness: 2, color: Color(0xff898F9C)),
+            const SizedBox(height: 20),
+            const Divider(thickness: 2, color: Color(0xff898F9C)),
             SizedBox(
               height: 210,
               child: ListView(
                 scrollDirection: .horizontal,
                 children: [
-                  CreateStory(),
+                  const CreateStory(),
                   StoryItem(
                     item: StoryModel(
                       storyImage: 'assets/images/image1.jpg',
@@ -114,7 +114,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             ListView.builder(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),

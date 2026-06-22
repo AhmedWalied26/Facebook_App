@@ -31,9 +31,9 @@ class CreateStory extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              Expanded(
+              const Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 12),
+                  padding: EdgeInsets.only(top: 12),
                   child: Center(
                     child: Text(
                       'Create a\n  Story',
@@ -53,7 +53,7 @@ class CreateStory extends StatelessWidget {
         Positioned(
           top: 126,
           left: 58,
-          child: CircleAvatar(
+          child: const CircleAvatar(
             backgroundColor: Colors.white,
             radius: 12,
             child: Icon(Icons.add_circle, color: Color(0xff1877F2)),

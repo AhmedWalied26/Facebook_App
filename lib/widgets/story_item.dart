@@ -18,7 +18,6 @@ class StoryItem extends StatelessWidget {
               color: Colors.red,
             ),
             margin: EdgeInsets.only(right: 12, top: 16, bottom: 16),
-
             child: ClipRRect(
               borderRadius: BorderRadius.circular(15),
               child: Image.asset(item.storyImage, fit: BoxFit.cover),

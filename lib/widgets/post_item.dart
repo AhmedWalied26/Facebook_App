@@ -37,7 +37,7 @@ class PostItem extends StatelessWidget {
                         fontSize: 16,
                       ),
                     ),
-                    SizedBox(height: 4),
+                    const SizedBox(height: 4),
                     SizedBox(
                       width: 50,
                       child: Row(
@@ -61,8 +61,8 @@ class PostItem extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(width: 270),
-              Icon(Icons.more_horiz, color: Color(0xff242527), size: 32),
+              const SizedBox(width: 270),
+              const Icon(Icons.more_horiz, color: Color(0xff242527), size: 32),
             ],
           ),
           Padding(
@@ -73,8 +73,8 @@ class PostItem extends StatelessWidget {
               child: Image.asset(item.postImage, fit: BoxFit.cover),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16, top: 22),
+          const Padding(
+            padding: EdgeInsets.only(left: 16, top: 22),
             child: Row(
               children: [
                 Icon(Icons.favorite_border, size: 28, color: Colors.black),

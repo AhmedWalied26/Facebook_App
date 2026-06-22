@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       elevation: 0,
       automaticallyImplyLeading: false,
-      title: Text(
+      title: const Text(
         'Facebook',
         style: TextStyle(
           color: Color(0xff1877F2),
@@ -29,7 +29,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           fontFamily: 'Inter_18pt-Bold',
         ),
       ),
-      actions: [
+      actions: const [
         Icon(Icons.add_circle, size: 30, color: Colors.black),
         SizedBox(width: 12),
         Icon(Icons.search, size: 32, color: Colors.black),
@@ -51,7 +51,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ...tabIcons.map(
             (path) => Tab(child: ImageIcon(AssetImage(path), size: 28)),
           ),
-          Tab(
+          const Tab(
             child: CircleAvatar(
               radius: 16,
               backgroundImage: AssetImage('assets/images/Messi.jpg'),
