@@ -41,7 +41,6 @@ class CreateStory extends StatelessWidget {
                         color: Color(0xff242527),
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        fontFamily: 'Inter_18pt-Bold',
                       ),
                     ),
                   ),

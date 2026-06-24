@@ -12,6 +12,7 @@ class FacebookApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        fontFamily: 'Inter',
         useMaterial3: true,
         appBarTheme: const AppBarTheme(
           scrolledUnderElevation: 0,
